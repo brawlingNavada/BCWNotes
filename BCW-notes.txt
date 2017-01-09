@@ -1,0 +1,192 @@
+
+=======
+161222
+=======
+
+Been working on getting a deeper understanding of flexbox and preping to add UI to the weather app.
+
+CQ: Outline the options for flexbox containers and child Elements
+DFAJ
+    DFW
+    IC
+FAO
+GBS
+
+
+Flexbox continer properties
+---------------------------
+
+Display: Is the flex container itself a block or inline item.
+    Flex
+    Inline-Flex
+
+Flex-direction: when placing the items into the container how should they be arragned?
+    Row
+    Column
+    Row-Reverse
+    Column-Reverse
+
+Flex-flow - blach
+
+Flex-wrap: if space is constrained should we start a new line?
+    wrap
+    nowrap
+    wrap-reverse
+
+Align-Items : for any given line how are the elements placed relative to the log axis.
+    flex-start
+    center
+    flex-end
+    baseline
+    strech   
+
+Align-Content : If there is additonal space beyond  the lines of items how should they be arranged?
+    flex-start
+    center
+    flex-end
+    stretch
+    space around
+    space between
+
+Justify-Content : How should content be justified along a row?
+    flex-start
+    flex-end
+    center
+    space around
+    space between
+
+
+
+Flexbox Child Properties
+------------------------
+flex-grow : ability of he child to grow as necessary
+flex-basis : <need better understanding of this>
+flex-shrink : ability of child to shrink as necessary
+flex: shortand for flex-grow, flex-shrink and flex basis
+align-self: similar to align items but for an individual child.
+order : order in which items are placed in a container.
+ 
+CQ: How do you add a background image to a webpage using CSS?  How do you prevent that image from tiling?  How do you center that image? 
+body 	{
+	background-image:url("URLGoesHere");
+	background-repeat: no-repeat;
+	background-position: top center;
+	
+}
+
+CQ: What are the choices for backround position? 
+top left
+top center
+top right
+center left
+center center
+center right
+bottom left
+bottom center
+bottom right
+x% y%
+xpos ypos (where xpos and ypos are given in pixles).
+
+
+
+CQ: How to you add a color wash behind a css element?
+CHEAT: How to you add a color wash behind a css element? --> background-color: rgba(255, 255, 255, .85);
+RGB is a 3-channel format containing data for Red, Green, and Blue. RGBA is a 4-channel format containing data for Red, Green, Blue, and Alpha.
+There is no use to the Alpha channel other than making the color transparent/opaque (or partially transparent; translucent).
+In CSS, rgb() had wide browser support for several years before rgba() received the same level of support. This is one reason you will find more rgb() in CSS than rgba(). The other reason is that translucency isn't something you typically use everywhere.
+In CSS, the designers decided to use values 0-255 (the range for an 8 bit value) for the Red, Green, and Blue, but they use a value between 0.0 and 1.0 for the Alpha channel. 
+
+CQ: How do you set a backround image to spread accross the whole backround?
+background-size: cover;
+
+CQ: How to change css properties using jQuery?
+css("propertyname","value");
+Example: $("body").css("background-image", "url('travago.jpg')");
+
+
+Q: How to set a browser element to be the size of the viewport (161223)
+What are Viewport-Percentage Lengths?
+The viewport-percentage lengths are relative to the size of the initial containing block. When the height or width of the initial containing block is changed, they are scaled accordingly. These units are vh (viewport height), vw (viewport width), vmin (viewport minimum length) and vmax (viewport maximum length).  How can this be used to make a divider fill the height of the browser? For this question, we can make use of vh: 1vh is equal to 1% of the viewport's height. That is to say, 100vh is equal to the height of the browser window, regardless of where the element is situated in the DOM tree:
+HTML
+<div></div>
+CSS
+div {height:100vh;}
+
+CQ: What are the differences between setting a style in CSS and changing it with the .css method? (161223)
+
+body {background-image:url("images/travago.jpg");}
+$("body").css("background-image","url('images/adams.jpg')"); <-- note the absence of the : and the ;
+hint: be mindful of your colons.
+
+CQ: When referencing a function call in a jQuery .click method do you include the parens? (161223)
+No. 
+ $("#changePic").click(changePic);  <-- when the item id'd as changePic is clicked the chagePic function is called.  Note the absence of parens in the handler.
+
+
+CQ: How do you open up multiple files simultaneously in vim? (161223)
+vim -o file1.txt file2.txt file3.txt
+
+CQ: How do you switch between multiple windows in vim? (161223)
+[ctrl]+w <arrow key>
+
+CQ: How do you link an external style sheet? (161223)
+<link rel = "stylesheet"
+  type = "text/css"
+  href = "myStyle.css" />
+
+Pulling JSON data on command line with curl.
+$ URL='https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q39246&format=json'
+
+$ curl -s $URL | jq '.entities[].labels.en.value'
+
+--> "Richard Feynman"
+
+Main:      action = query 
+               format = json
+Action:     list = search
+List:          srsearch = Albert Einstein
+               srlimit = 10
+               sroffset = 0
+
+
+
+
+var baseURL = "https://en.wikipedia.org//w/api.php?action=query&format=json&list=search&utf8=1&srsearch=Albert+Einstein"
+if you pull down this data and store in variable x
+x.query.search.[0] returns the title of the 0th entry.
+
+Object.keys(x)  --> ["batchcomplete", "continue", "query"]
+
+x.continue -->
+Object {
+continue: "-||",
+sroffset: 10
+}
+
+I think what this is telling me that if I wan to pull in more data have to set the sroffset to ten on subsequent request.
+x.continue.sroffset --> 10
+
+for (n=0;n<10;n++) {console.log(x.query.search[n].title)};
+prints out all of the titles in the search to the log.
+
+function takeResultsData(json)
+{
+  console.log("in takeResultsData")
+  x = json;
+  var output = [];
+  for (n=0;n<10;n++)
+    {
+      output.push(x.query.search[n].title);
+    }
+      console.log(output);
+}
+ output is an array of titles.
+
+
+
+
+
+
+
+
+

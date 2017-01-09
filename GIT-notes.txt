@@ -1,0 +1,179 @@
+CQ: In git how do you create a new repository?
+CHEAT: In git how do you create a new repository? -- > git init
+
+CQ: In git how do you clone a local repository?
+CHEAT: In git how do you clone a local repository? --> git clone /path/to/repository
+
+CQ: In git how do you clone a remote repository?
+CHEAT: In git how do you clone a remote repository? --> git clone username@host:/path/to/repository
+
+
+CQ: In git how do you add files to staging?
+CHEAT: In git how do you add files to staging? --> git add <filename>
+
+CQ: In git how do you remove a file from staging?
+CHEAT: In git how do you remove a file from staging?--> git rm <filename>
+
+CQ: In git how do you commit changes on the command line? 
+CHEAT: In git how do you commit changes on the command line? --> git commit -m "commit message"
+
+CQ: In git how do you push changes to a remot repository?
+CHEAT: In git how do you push changes to a remot repository? --> git push origin master
+
+
+CQ: In git how do you conect local repository to remote repository?
+CHEAT: In git how do you conect local repository to remote repository? --> git remote add origin <server>
+
+
+
+CQ: In git how do you update the local repository with remote changes? 
+CHEAT: In git how do you update the local repository with remote changes? --> git pull
+
+CQ: In git how do you create a new branch?
+CHEAT: In git how do you create a new branch? --> git checkout -b <branch>
+CQ: In git how do you switch to the master branch?
+CHEAT: In git how do you switch to the master branch? --> git checkout master
+CQ: In git how do you connect local repository to remote repository?
+CHEAT: In git how do you connect local repository to remote repository? -- > git remote add origin <server>
+
+CQ: In git how do you  update local repository with remote changes?
+CHEAT: In git how do you  update local repository with remote changes? -- > git pull
+
+CQ: In git how do you push a branch to remote repository? 
+CHEAT: In git how do you push a branch to remote repository?  --> git push origin <branch>
+
+
+CQ: In git how do you merge changes from another branch?
+CHEAT: In git how do you merge changes from another branch? --> git merge <branch>
+
+
+CQ: In git how do you view changes between two branches?
+CHEAT: In git how do you view changes between two branches? git diff <source branch> <target branch>
+
+CQ: In git how do you create a tag?
+CHEAT: In git how do you create a tag? --> git tag <tag> <commitID>
+
+CQ: In git how do you get commit IDs?
+CHEAT: In git how do you get commit IDs? --> git log
+
+
+GIT is a distributed verison control system.
+The local repository has all the contents of the centeral repository.
+
+First Time Steup
+================
+Set Config Values
+
+git config --global user.name "You Name Here"
+git config --global user.emal "JCLacivita@gmail.com"
+
+CQ: In git how do you list the current configuation settings?
+CHEAT: In git how do you list the current configuation settings? --> git config --list
+
+get help <verb>
+ex: git help config
+
+CQ: What is the name of the file in the git repository where you store a list of files NOT to track?
+CHEAT: What is the name of the file in the git repository where you store a list of files NOT to track? --> .gitignore
+
+There are three areas in the git system
+
+1.) Working Directory
+2.) Staging Area: This is where we organize what we want to be comitted to the repository.
+3.) Repository
+
+CQ: What are the three areas in the git system?
+CHEAT: What are the three areas in the git system? Working / Staging / Repository
+
+CQ: How do I add all tracked files to the staging area?
+CHEAT: How do I add all tracked files to the staging area? git add -A
+
+CQ: How do you remove a file from the staging area in git?
+CHEAT: How do you remove a file from the staging area in git? --> git reset <filename> (just git reset will remove all files from the stating area).
+
+CQ: What is the syntax to clone a remote repository?
+CHEAT: What is the syntax to clone a remote repository? --> git clone <url> <where to clone>  git clone <from> <to>
+
+
+CQ: Before moving to the staging area how do you show what changes have been made to a file?
+CHEAT: Before moving to the staging area how do you show what changes have been made to a file? -- > git diff
+
+1. Make the changes in the working directory.
+2. Move the changes to the staging area.
+3. Commit changes to local repository
+4. Git Pull <from remote to local> : git pull origin master
+5. Git Push origin master
+
+CQ: How do you list the branches on a local repository?
+CHEAT: How do you list the branches on a local repository? --> git branch
+
+
+Common Workflow
+---------------
+1. Create a branch : git branch <branchName>
+2. Make changes in that branch
+3. Commit those changes 
+4. Push that branch to the remote repository
+5. (Unit testing whatever is done at the remote repository)
+
+CQ: How do you delete a branch on a remote repository?
+CHEAT: How do you delete a branch on a remote repository?--> git push origin --delete <branchName>
+
+Video 02==================================================================
+https://youtu.be/FdZecVxzJbk?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx
+==========================================================================
+
+OQ: How to set up mears as a repository?
+
+CQ: How do you revert to to a clean copy of a file prior to staging (i.e. it has not been added to staging yet).
+CHEAT: How do you revert to to a clean copy of a file prior to staging (i.e. it has not been added to staging yet). --> git checkout <filename>
+
+If your commit message is wrong you can fix it with git commit --amend -m "New commit message."
+
+
+git log --stat
+
+
+Walkthrough : made commit to wrong branch
+If you have made commitments in the wrong branch? You will need to move that commit to the proper branch and remove it from the wrong one.
+1. show the hashes of the commits :: git log
+2. copy to the clipboard enough characters the hash of the commit you wnat to move to a new branch
+3. Checkout the branch you wnat to put the commit into
+4. place the commit into this branch :: git cherry-pick <hash> (cherry-pick is a copy, not a move, so you have to clean up the origional branch).
+5. git checkout origional(wrong) branch
+6. git reset --soft|--mixed--|--hard 
+
+There are three different resets (soft, mixed, hard)
+A soft reset removes the commit but keeps the files in the _staging_ area.
+A mixed reset <default> removes the commit but keeps the files in the _working_ area.
+A hard reset returns both staging and working areas to a pre-modified state.
+
+7. remove any untracked files :: git clean -df
+How to get rid of untracked files -- git clean -df  (d flag gets rid of directors and f flag gets rid of files).
+
+CQ: How do you view a commit history?
+CHEAT: How do you view a commit history? --> git log
+
+CQ: How do you copy a commit from one branch into another? 
+CHEAT: How do you copy a commit from one branch into another?  --> git cherry-pick <front of hash>
+
+CQ: How do you revert to an earlier commit point?
+CHEAT: How do you revert to an earlier commit point? git reset --soft|--mixed|--hard
+
+OQ: What is the difference between git log and git reflog?
+
+Git revert creates NEW commits to return to an earlier status.  You do this so you don't have to rewrite history.  It creates new commits ON TOP of the old so that the history remains intact.
+
+CQ: How to show differnce between commits given thier hashes?
+CHEAT: How to show differnce between commits given thier hashes? --> git diff <front of first hash> <front of second hash>
+
+
+
+
+
+
+
+
+
+
+
