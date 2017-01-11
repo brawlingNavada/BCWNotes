@@ -1,0 +1,141 @@
+Zach : 801-663-8770 - office manager
+
+Mark - 
+Find how to draw an owl.
+
+Jake.overall@boisecodeworks.com
+208-391-5162
+
+OQ: Google to define what SOLID application architecture.
+http://portal.boisecodeworks.com/#/profie - sunfish
+slack standard x2 [change this]
+
+Clean snow from drains around driveway.
+
+[] Verify connection with github.
+
+
+npm -v  --> should return a version (not unkow)
+git --version --> should return a version
+
+
+To edit your profile (including your profile photo) for the CodeWorks, Boise team, visit your Account Profile. You can also change your password there.
+
+[] Monoprice order
+Add better wallpaper to codeworks machine.
+
+AAron
+Colby - construction
+Brandon
+Jamie
+
+Dave - spain
+Camron
+Mandy
+dave
+Kevin
+Andrew
+Eric
+Jason
+
+Justin
+Rachel
+
+(front table)
+Roy
+Gunner
+
+(back table)
+Lee - Amry
+Kenny
+
+(front table)
+Rory - upstate NY
+Lars
+
+Hussein
+
+[] Download slack app.
+
+[] Make Github account JamieLacivita
+
+=====GIT=====
+Source Control
+Github is not the same thing as git.
+Github is just a pretty interface for a git server.
+A git server listens for the those types of pushes.
+ 
+
+Naming convention for a directory.
+lowercase only
+use hyphen for space
+
+change relevant directories to lowercase.
+
+
+code . --> use to start Visual Studio Code in the current folder.
+
+
+The folders open explorer.
+
+
+download relevant programs onto Linux side.
+
+Hot key to open a day text file?
+
+![tab] pulls up a code snpit for an HTML doc.
+h1[tab] will give you a text snippit for the h1 tag.	
+npm i -g http-server <-- this loads a server emulator in node js.
+http-server .
+
+Looke up spaced repition software (Lars may have deacent version).
+http://ankisrs.net/
+
+git logs from last night
+
+origin is a synomyn for a the URL.
+
+git remote add origin https://github.com/jakceoverall/day-one.git
+
+what this is saying is origin is https://github...
+
+then
+
+git push -u origin master
+git push (upstream) origin (which is the remote repo location) master (branch)
+git push upstream [remote location] [branch]
+git push upstream to [remote location] [branch]
+
+create this as a branch gh-pages <-- this needs to be created as branch
+Need to create a new repository brawlingNavada... stuff ...
+
+Key Takaways
+Comnand line stuff
+Installed tools
+git / github
+
+Homework : 
+http://portal.boisecodeworks.com/#/my-path/Command%20Line
+update bio
+add pic of yourself
+
+Twitter bootstrap
+
+
+
+=====Updateing against github io=====
+
+make changes on local repo
+confirm they are good
+git add
+git commit (against branch master)
+git pull
+git push
+
+On github website on branch master make a pull request.
+Compare master with gh-pages
+Resolve conflicts
+Commit changes
+
+
+
