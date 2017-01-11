@@ -1,0 +1,25 @@
+HTML: the structure of the page, but not the data.
+Find fore on this Mundaumium
+HTML5 has <!DOCTYPE html> start tag.
+<svg> is a new canvas framework for HTML 5
+Task: Set up vim to use the ! to pull up a doc framework.
+tag.classname --> fills in 
+ul>li*3
+	ul tag
+	3 li inside the ul tag
+Review cheet sheet; http://docs.emmet.io/cheat-sheet/
+This preports to be a plugin to vs code to emulate the vim settings : https://github.com/VSCodeVim/Vim
+Card: <link rel="stylesheet" href = "file">
+Review this : http://flukeout.github.io/ (css caff)
+bonus: http://flexboxfroggy.com/
+
+display:inline-block;
+	this will keep you from pushing stuff off the line 
+	If you want wnat to take a block element side by side
+		1. give it a fixed with
+		and
+		2. sent display mode to inline-block;
+
+
+
+
