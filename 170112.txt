@@ -1,0 +1,138 @@
+Task: Add Cmdr to path
+Task: Shut off Cortona
+Task: Add pic to github profile.
+
+Very good summary of what coding is: http://www.economist.com/blogs/economist-explains/2015/09/economist-explains-3
+
+Bootstrap has a fixed nav bar.
+there is a class called text white in bootstrap!
+A hero element is the main element on a page.
+
+try to mimic the cafezupas website.
+
+In bootstrap The only elements that should be imeedate children of a container shold have a class of row!
+The hardest part of CSS positioning elements.
+	This is why CSS frameworks - it takes the effort of this.
+	Not all frameworks use a 12 colum grid system.
+	The 12 column grid is industry standard.  Stay with frameworks with these types of grids.
+
+Continer
+	.Row
+	.Row
+	.Row
+
+.Row <-- this will result in horzontal scrolling. (because it is NOT in the container).
+
+You need to be able to do this quickly and efficinetly. 
+Task: [] copy websites and concentrate on getting the layout correct.
+
+It is worth your time to master the grid system.
+
+Container
+Container (this is ok in bootstrap)
+
+Container
+Row <-- this is no good. because a Continer and a Row cannot be a silibing
+
+---------
+Container
+---------
+	---------
+	Row
+	----------
+		[ Column ]					[
+		[	]This is where you stuff gows		[close the row,
+		[	]					[
+
+to style add a class not an Id.
+
+You can infinateldy subdivide by 12.
+
+Do not next columns inside of columns.
+Container
+Row
+Column
+Row
+Column
+Row....
+
+
+Bootstrap: Find imaage responsive class
+
+.contaier : centers stuff - good for stuff you dont want edge to edge.
+.container-fluid : does not not center - good for full width elements.
+
+you can also specify a class for stiling purposeds on a .continer.
+
+DO NOT TOUCH ANYTHING IN THE BOX MODEL IN CONTAINER/ROW/COLUMN! Once you are inside the DIV inside the colun do what you want.
+
+Bootstrap
+Foundation
+Materialize are most comon frameworks.
+
+mkdir cafe-menu
+touch index.html
+touch style.css
+<link rel="bhal" href="blah"> {futuer hint scripts load through src not rel}
+
+.container
+.container[tab] <-- will open a div container quickly.
+.row[tab] <-- will open a row quckly
+
+OQ: How to do word wraping in VS code?
+
+lorem[#][tab] will give you that number of works in lourm ipsum.
+lorem[50][tab] will give you 50 words of lorem text.
+
+div.text-center[tab]
+button.btn.btn-primary[tab]
+butons can be primary, danger, warning, info (review button types in boostrap docs).
+
+you can apply the center-text on the column level or the row level.
+
+<div class = ".col-sm-6 col-sm-offset-3"> <--this gives you a column of 6 with a margin of three.`
+col-[size]-offset-[number]
+
+bootstrap has pannels (which are simlar to a card)
+
+.row[tab]
+ProTip: When you are done with a section, complase it.
+ProTip:Alt shift F will automatically format code (right click format docunment)
+If you keep your code collapsed the tabbing tells you if you are at container, row, and colum level.
+
+If you have two columns make sure the offset is applied to the first column.
+ex:
+col-sm-4 col-sm-offset-2 <--note that the offset is applied to the first element becasue you want the 
+				offset to be to the left of the first coumn and NOT Between them.
+col-col-sm-4
+
+.pannel>.pannel-heading>.h3[tab]
+.pannel-heading
+.pannel-body
+
+.pannel
+	pannel-heading
+	pannel-body
+
+To put space beween row add margint to the elements not within the row --- this violateds the box model protpery!
+
+m-t-20 <-- Jake's class margin top 20.
+
+.col-sm-3[tab]
+.well>img[tab]  <-- create a well and side of that put an image.
+> means the put this tag inside the first.
+class = "img-responsive" <-- as screen grows so does the image.
+
+.text-center is a class.
+image-responsive turn it into a block element.
+
+
+
+
+
+
+
+
+
+
+
