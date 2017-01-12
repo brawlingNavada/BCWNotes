@@ -19,6 +19,28 @@ display:inline-block;
 		1. give it a fixed with
 		and
 		2. sent display mode to inline-block;
+getboostrap.com
+bootstrap is a CSS framework.
+
+Protop: Put the bootstrap css ABOVE your local CSS file.
+This way you can overwrite what is in the framework.  You can customize thier
+stuff.
+
+Protip: Design for the small screen first.
+
+Row
+	columns columns columns
+Row 
+
+<hr> horzontal rule
+	{min-height: 10px; background-color:lightblue;}
+
+
+Task : Review Bootstrap component list
+
+
+
+
 
 
 
