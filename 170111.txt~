@@ -13,6 +13,22 @@ Card: <link rel="stylesheet" href = "file">
 Review this : http://flukeout.github.io/ (css caff)
 bonus: http://flexboxfroggy.com/
 
+display:inline-block;
+	this will keep you from pushing stuff off the line 
+	If you want wnat to take a block element side by side
+		1. give it a fixed with
+		and
+		2. sent display mode to inline-block;
+getboostrap.com
+bootstrap is a CSS framework.
+
+Protop: Put the bootstrap css ABOVE your local CSS file.
+This way you can overwrite what is in the framework.  You can customize thier
+stuff.
+
+
+
+
 
 
 

@@ -126,6 +126,13 @@ class = "img-responsive" <-- as screen grows so does the image.
 .text-center is a class.
 image-responsive turn it into a block element.
 
+jamielacivita/jamielacivita.github.io <-- the index page in this repo is where you landing page goes.
+
+[] Resueme and Landing Page should be layouted by the end of the week.
+
+Example of traffic light from Thrusday morning's class. 
+http://portal.boisecodeworks.com/#/codefoo/2178
+
 
 
 

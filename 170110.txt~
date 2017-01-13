@@ -7,9 +7,6 @@ Jake.overall@boisecodeworks.com
 208-391-5162
 
 OQ: Google to define what SOLID application architecture.
-READ: Code Magazine SOLID Software development, one step at a time.
-
-
 http://portal.boisecodeworks.com/#/profie - sunfish
 slack standard x2 [change this]
 
@@ -139,53 +136,6 @@ On github website on branch master make a pull request.
 Compare master with gh-pages
 Resolve conflicts
 Commit changes
-
-OS has a "paragraphs" comand line thingy.
-
-=====Twitter Bootstrap=====
-
-OQ: How do I load this framework into codepen
-
-A container is a <div class="container">
-A fluid container is a <div class="container-fluid">  It will always expand to
-fill the width of the screen.
-
-A row acts like a wrapper around the columns.
-OQ: Is it accurate the say that a column is like a cell and the row is like the
-container that holdds to cells?
-It is created by adding a class of .row to a block level element inside the
-container.
-
-Different sized column prefixes for different sized devices.
-.col-xs-
-.col-sm-
-.col-md-
-.col-lg-
-
-ProTip: Design for the smaller screen first.
-
-To nest a grid within a column the container is already defined.
-Columns behave as containers for a nested grid system.
-
-Container
-row
-
-You create a container with a <div> of class container.
-You create a row with a <div> of class row.
-You creat a cell within a row by creating a div of class "col-xx-#"
-where xx is sx|sm|md|lg and n is the width of the cell (a number that evently
-divides 12 i.e. 12,6,4,3,2,1).
-
-Offsetting colums
-you can use offseting classes
-ex: .col-xs-offset-*
-ex: .col-md-offset-* will put placeholders to the LEFT.
-
-Reording
-.col-md-push-* and .col-md-pull-* will shift a column to the left or right.
-
-
-
 
 
 
