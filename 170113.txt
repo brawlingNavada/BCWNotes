@@ -1,0 +1,60 @@
+
+Review of cheet sheets site.
+[] run cheetsheet for opening against work machine
+Reivew the Download ToDo list.
+unsplash
+https://unsplash.com/
+
+http:stackedit.io/editor
+This allows you to write editible markup.
+
+FlexBox - McCall
+================
+
+Example of vh css property.
+
+{height:100vh;width:50vw;background-color:blue;}
+
+And 100% of the vh.
+This produces a <div> that is 50% of the view-with.
+
+1. You create a container with flex:display
+2. Putting stuff in a flex container turns every imeedate child of that conainer inot a flex item.
+3. By default all of the flex items are displayed on the same single row.
+4. 
+
+SAAS allows you to use CSS variables.
+.wieightless;
+@extend .weithtless;
+
+em are not browser universeal
+rem are not browser universal
+ 
+producthunt.com
+
+Goal: Profecient to develop quickly
+Being very good with boostrap is very imporment.
+
+
+
+corlorhunt.co
+:wq
+
+SAAS is a preprocesor
+
+OQ: Is it fair to say that a preprocessor is a like a frameowrk.
+
+node saas allows you to convert sass to css.
+
+@import used to pull stuff from CDNs.
+the is analagous to the stylesheet link head.
+
+
+
+https://github.com/BoiseCodeWorks/sass-bs4.git
+
+adding a class of img.responsive to the image in a bootstrap container will allow it size with the size of the container.
+Responsive images are sized so they never get larger than thier parent container.
+
+
+

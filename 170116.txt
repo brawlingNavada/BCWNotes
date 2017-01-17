@@ -1,0 +1,76 @@
+
+
+Mozilla Developer Network
+Code foo 172
+OQ: Does javascript have constants?
+
+Don't use double quotes in javascript.
+There are three different ways to create a string, single quotes, double quotes and backtick.
+
+always, always use var.
+absent the var it is a global.  You hardly ever want this.
+
+when utalizing a bool never use string characters.
+
+'' <-- false
+' ' <-- truthy
+'false' <-- truthy
+
+True <-- NOT a bool.
+False <-- NOT a bool.
+
+[Ctrl]+/ to comment out.
+
+In javascript, unlike other languages, you can create objects on the fly.
+
+var bowl = {
+brand: 'Kelloggs',
+name: 'frosted flakes'};
+
+Card: Objects are passed by refrence, not value.
+Card: Primatives are passed by value.
+Card: An array is a collection of LIKE datatypes.  They are different from objects.  An object is a single instance of a single object. 
+
+[] clipboard
+terminate statements with a semi-colin ";"
+
+Key : HTTP is a protocol without state.  It does not remember.
+Write your notes from the perspective of "What Problem does this Solve."
+
+Key : Javascript works against the static page DOM.
+
+[] Small exetntion cords
+
+'Line of Business'
+
+[] Clean up repos.  
+Task : write a navbar with a box shadow.
+
+Key: Everything is being passed by refrences except for the primatives.
+
+[] use picture of you with hard disk on refrence page.
+
+Task: write up a demo to show passed by references where you change 
+	myObject = {...}
+	copyOfmyObject = {...}
+	changing a value of copyOfMyObject should be reflected if log.console on myObject.
+
+Key: Objects and arrays are basically the same but objects have a Key while arrays have an Index.
+
+If you are pointed at object you can make an assignment and it will change.
+If you are pointed at a PRIMITAVE you CANNOT make an assignment.
+
+Key: all object oriented programing is a collection of independnet objects.
+
+
+Array of objects that have child objectds.
+
+Shuffeling description : https://bost.ocks.org/mike/shuffle/
+
+Key : Methods are functions that are stored inside an object.
+
+Key : The this keyword refers to the current object. Note that this is not a variable. It is a keyword, and its value cannot be changed.
+
+
+
+
