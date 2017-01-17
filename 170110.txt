@@ -7,30 +7,25 @@ Jake.overall@boisecodeworks.com
 208-391-5162
 
 OQ: Google to define what SOLID application architecture.
-READ: Code Magazine SOLID Software development, one step at a time.
+READ: Code Magazine SOLID Software development, one step at a time. http://www.codemag.com/article/1001061
 
 
 http://portal.boisecodeworks.com/#/profie - sunfish
 slack standard x2 [change this]
 
-Clean snow from drains around driveway.
-
-[] Verify connection with github.
-
-
 npm -v  --> should return a version (not unkow)
 git --version --> should return a version
 
+ToDo: edit your profile (including your profile photo) for the CodeWorks, Boise team, visit your Account Profile. You can also change your password there.
 
-To edit your profile (including your profile photo) for the CodeWorks, Boise team, visit your Account Profile. You can also change your password there.
+ToDo: Add better wallpaper to codeworks machine.
 
-[] Monoprice order
-Add better wallpaper to codeworks machine.
-
+Seating Chart
+=============
 AAron
 Colby - construction
 Brandon
-Jamie
+Jaime
 
 Dave - spain
 Camron
@@ -58,9 +53,7 @@ Lars
 
 Hussein
 
-[] Download slack app.
-
-[] Make Github account JamieLacivita
+ToDo: Download slack app.
 
 =====GIT=====
 Source Control
@@ -84,7 +77,7 @@ The folders open explorer.
 
 download relevant programs onto Linux side.
 
-Hot key to open a day text file?
+Task: Hot key to open a day text file?
 
 ![tab] pulls up a code snpit for an HTML doc.
 h1[tab] will give you a text snippit for the h1 tag.	
@@ -92,7 +85,7 @@ npm i -g http-server <-- this loads a server emulator in node js.
 http-server .
 
 Looke up spaced repition software (Lars may have deacent version).
-http://ankisrs.net/
+Read: http://ankisrs.net/
 
 git logs from last night
 
@@ -105,7 +98,7 @@ what this is saying is origin is https://github...
 then
 
 git push -u origin master
-git push (upstream) origin (which is the remote repo location) master (branch)
+git push (upstream to) origin (which is the remote repo location) master (branch)
 git push upstream [remote location] [branch]
 git push upstream to [remote location] [branch]
 
@@ -140,11 +133,10 @@ Compare master with gh-pages
 Resolve conflicts
 Commit changes
 
-OS has a "paragraphs" comand line thingy.
+SM: OS has a "paragraphs" comand line thingy.
 
 =====Twitter Bootstrap=====
 
-OQ: How do I load this framework into codepen
 
 A container is a <div class="container">
 A fluid container is a <div class="container-fluid">  It will always expand to
@@ -179,13 +171,7 @@ divides 12 i.e. 12,6,4,3,2,1).
 Offsetting colums
 you can use offseting classes
 ex: .col-xs-offset-*
-ex: .col-md-offset-* will put placeholders to the LEFT.
+Card: ex: .col-md-offset-* will put placeholders to the LEFT.
 
 Reording
-.col-md-push-* and .col-md-pull-* will shift a column to the left or right.
-
-
-
-
-
-
+Card: .col-md-push-* and .col-md-pull-* will shift a column to the left or right.

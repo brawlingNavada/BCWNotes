@@ -2,13 +2,13 @@ Task: Add Cmdr to path
 Task: Shut off Cortona
 Task: Add pic to github profile.
 
-Very good summary of what coding is: http://www.economist.com/blogs/economist-explains/2015/09/economist-explains-3
+Read: Very good summary of what coding is: http://www.economist.com/blogs/economist-explains/2015/09/economist-explains-3
 
 Bootstrap has a fixed nav bar.
 there is a class called text white in bootstrap!
 A hero element is the main element on a page.
 
-try to mimic the cafezupas website.
+Task: try to clone the cafezupas website.
 
 In bootstrap The only elements that should be imeedate children of a container shold have a class of row!
 The hardest part of CSS positioning elements.
@@ -57,7 +57,6 @@ Column
 Row....
 
 
-Bootstrap: Find imaage responsive class
 
 .contaier : centers stuff - good for stuff you dont want edge to edge.
 .container-fluid : does not not center - good for full width elements.
@@ -106,6 +105,9 @@ col-sm-4 col-sm-offset-2 <--note that the offset is applied to the first element
 				offset to be to the left of the first coumn and NOT Between them.
 col-col-sm-4
 
+OQ: What is a pannel in bootstrap?
+OQ: What is a well in bootstrap?
+
 .pannel>.pannel-heading>.h3[tab]
 .pannel-heading
 .pannel-body
@@ -132,14 +134,3 @@ jamielacivita/jamielacivita.github.io <-- the index page in this repo is where y
 
 Example of traffic light from Thrusday morning's class. 
 http://portal.boisecodeworks.com/#/codefoo/2178
-
-
-
-
-
-
-
-
-
-
-
