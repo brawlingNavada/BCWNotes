@@ -1,0 +1,83 @@
+Single quotes in javascript
+Double quotes in HTML
+
+.splice array method (look up MDN) puts stuff into an array.
+.slice array method (look up at MDN) remove stuf from an array.
+
+Task: put together list of background images to use as test images. (pngs for icons and wallpaper and textures).
+
+Key: Array and objects have different methods.
+
+Task: construct an array (formal mathematical specificaton) as an object in JavaScript.  Add getter and setter methods.  Display in html.
+
+delete jake.title
+
+Card: Bracket notation is the only way you can use a variable to access a propery on an object.
+Card: If you are accessing a value on on object using a variable you MUST use BRACKET notation.
+Card: If you are accessing a value on on object using a variable you MUST use BRACKET notation and the type of the variable must be STRING.
+
+OQ: Why not construct an while loop that does not require incrementing within the code.  I.e. the loop should run a fininte numbe of times (this can be validated) and the functionaliy designed to prevent infineite loops.
+
+
+rep(some number)
+{
+code to repeate
+}
+
+
+Task: Download You Don't Know JS: Scope & Closures
+
+Alternate way to define functinos...
+
+var add4 = function(x)
+{
+	return x + 4;
+}
+
+OQ: What is hosting
+
+
+Key: Write functions to solve the smallest posible peice of the problem at a time.
+
+S.O.L.I.D.
+==========
+Can you explain solid to me is a good interview questions.
+
+S: Single Resonsiblity
+	What is the problem I'm trying to solve and can this function do it it self.
+	What does that function do.
+	If you have a function that does this AND that you want two functions.
+
+
+A function is a first - class citizen.
+
+If you don't apply solid principles you wind up with bowls of speghetti.
+
+Example of an error object.
+return {error: "sorry there is no student with the name" + name}
+
+if you just type in the name of the function you will get an output of that function.
+
+table.table.table-striped <-- this is a text expansion in vs code to put in...
+
+The browser converts tags into elements.
+An element has inner contents.
+
+ debugger <-- reserved word (breakpoint)
+
+ A node is an outer, bigger elements that holds the elements.
+
+ All uppercase letters means the thing is a constant, not a variable.
+  
+  Task : dump an array to the page with javaScript.
+
+var query = documenty.getElementById('guerry').value <-- will get the value of what the user has typed into an input box.
+
+Make sure that your functions always returns ONE type of data from a function or method.  If you are returning an array on succeds, you should also return an array on failure (it may be an empty array but it is still an array.).
+
+
+
+
+
+
+
