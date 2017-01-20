@@ -1,0 +1,100 @@
+
+.reverse.join
+
+Key: Eveything in JavaScript is an object.
+
+When writing code in the chrome browser, [Shift]+[Return] will allow you to write code on more than one line.
+Task: Reivew functions taking functions as a parementer.
+
+Hoisting:  Javascript is executed from the top down.  After the first read through It moves all the varibial definitions and and variable definations are hoisted.
+	Values are NOT hoisted.
+
+	If you try and refer to the value before defining it you will have a problem.
+
+	Best practice:	Define and initalized all of your variables at the top.
+	Vaues are NOT hoisted (this includes anamyous functions).
+
+A named function, the whole thing is a defination and it is hoisted.
+
+And anamomous function the value of the funciton is not hoisted (the variable identiy is but not what it is assigned to it)
+Assume that Anom.Functions cannot be hoisted.
+
+Let is the ex6 was of creating a variable.
+	With LET no hoistting.
+	If you use LET it will hoist.
+
+Task : Review Hoisting
+
+Task write a web page for adding matricies.
+Problem, how to enter the matrix syntax on the page?
+
+You can use a return statement kinda like break statement if you satififiy a condition and then return.
+
+SCOPE
+=====
+In Javascript, scope is the set of variables, objects and functions a code statment has access to.
+	"Scope is the fog of war for your program"
+
+Key: Every function has its own local scope.
+When you request the value of a variable it the browser will work up the stack from smaller to greater scope until it find a value.
+
+Key: Do not create global variables unless you intend to.
+Key: Your golobal variables (or function) can overwite window variables (or functions).
+Key: Any function, including including the window object can overwrite your global variables.
+
+Immedately Invoked Function Expressions
+(function sum() {return 2+3})()
+(function() {...code...goes...here...})();
+
+
+
+Read : http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+
+You can see into larger scope but it can not see down the scope stack.
+You can modify data in any current scope or larger.  
+Modifications can travel UP the scope scope stack but not down the stack.
+
+the LET keyword and the VAR keyword are used to shape scope.
+The LET is more restrictive.
+The VAR is less restrictive.
+
+Let is never hoisted and its scope is restricted to the function body in which it was defined.
+
+The is a builtn date object.
+
+var today is new Date;
+
+Key: An object definition is just the plans (think blupritnt)
+You cannot live in the plans.
+You can only life in the house.
+
+Example of creating a function definition:
+
+function Contact() 
+{   	this.firstName = "Jessie"   
+	this.lastName = "James" 
+}  
+let myFriend = new Contact();
+
+The THIS keyword referrs to ITSELF.
+
+
+Example of adding a method to an object. 
+this.fullName = function() 
+{
+return this.firstName + " " + this.lastName;
+}
+
+Geneic Syntax:
+this.[methodName] = function()
+{
+	code you want to run the method
+	return something.
+}
+
+
+
+
+
+
+

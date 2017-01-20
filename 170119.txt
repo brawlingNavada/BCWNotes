@@ -1,0 +1,95 @@
+
+
+Memorize this code snppit:
+
+===============
+Backtick Syntax
+===============
+
+
+var mytable = document.getElementById("mytable") 
+mytable.innerHTML = "JWTO"
+
+the backtick `
+puts you into template mode.
+Then replace variables with ${variableName}
+
+You can now put the code on multiple lines.
+
+codefoo 2306 <-- example of backtick syntax.
+
+=============
+Breakponits
+=============
+
+type debugger into the Visual Studio the code will stop at that point
+This is a javascript function and will work in any editor
+You can add a brakepoint by clicking on a line number in developer tools / sources.
+You can hover over stuff to actually see what is going on.
+If you wind up a minified file, use the step out arrow wich is the dot with an up arrow.
+Step over is the left most arrow over a dot.
+
+Arrow point at a dot is a step-into.
+The hover function will not work when you are out scope
+ 
+Network > Disable Cashe
+
+you can log a bunch of stuff in console.log(object1, object2, object3)
+
+A TOKEN is a chunk of code fed into the compliler.
+
+Project List
+============
+1. Resume
+2. Landing Page
+3. Quote Machine
+4. WX viewer
+5. Rock Paper Scissors
+
+https://blog.pramp.com/how-to-get-unstuck-in-technical-interviews-93d4632ef996#.nz48032v://blog.pramp.com/how-to-get-unstuck-in-technical-interviews-93d4632ef996#.nz48032v6
+
+string.trim removes leading and trailing whitespace.
+
+Review Fizz Buzz
+
+OQ: On the rock paper scizzors can you create an object that populates the html so you don't have to call a bunch of functions?
+
+<input type = "text" id = "new-student">
+<button onClick="addStudent()">Add Student</button>
+
+var studentName = document.getElementById("new-student").value
+
+JavaScript is single threaded.
+
+The splice method removes an element from an array.
+
+array.splice( [indexToStartAt] , [howManyToRemove], [ReplacmentItem]) --> Returns an array of what is removed.  It modifies the original array.
+
+splice is destructive -- it modifies the origional data.
+
+slice is a non-destructive way to get part of an array.
+
+Objects are passed by refrence ... so the is a shallow copy.
+
+==========
+For Each in javascript is a method
+
+
+This is the way to iterate over an object.
+for(var key in button)
+{
+	document.write(key + '<br>')
+}
+docunment.write('<hr>')
+
+
+Practice iterating over objects and reutring an particular value.
+
+
+
+
+
+
+
+
+
