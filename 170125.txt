@@ -1,4 +1,4 @@
-
+this
 Model (service) View Controller
 
 What is job of controller?
@@ -18,10 +18,11 @@ What is job of controller?
 	The very bottom line of the controller should be the triger to initally load the page. 
 		Ex: this.handel.Reset()
 	Service and View never talk to each other.  They should not be open in your editor at the same time.
+	if something is on .this on the controller it better be something that the user is going to touch.
+	HTML written to the page is done in the controller.
 
 
-
-What is job of the serivce (model)?
+What is job of the serivce (model)?  var dcCharacters = getCharacters(arr,uni1)
 ==================================
 	The reason this is both service and model is becasue you have functions (service) and data (model)
 	This is the part where you manupulate objects.
@@ -54,11 +55,39 @@ If devtool are open, you can hold click on reload and call it as "empty cash and
 You cannot be afraid to brake you code.
 If your intellisense isn't helping you you are probably writing your code wrong.
 
+See this cheetsheet as well : https://bcw-cheatsheets.herokuapp.com/cheatsheets/18
+You want to use encapsulation to shape the data avaiable to the user.
+
+
 The app.js
 ==========
 This is how you initaize the project.
-
+You do this by instationing a controler object.
+	ex: 
 
 In the HTML
 ===========
   sum = sum + forEach(arr_cart)
+  
+
+ User Story
+ ==========
+Codefoo 2446
+
+Template Strings
+================
+The gole withe the template string is to write out HTML which will be injected onto the page.
+
+Example:
+	var template = `<ul>`;
+	for (var char of dcChars)
+	{
+	template += `<li>${char.name}</li>`
+	}
+
+See codefoo 2446
+placehold.it/200x200 --> will return a placeholder of size 200x200.
+
+
+
+
