@@ -66,4 +66,41 @@ _player is a private variable.
 
  Key: Variable declared in a function are hidden form any code outside of its definition.
 
+//Some sample code I wrote to illustrate this -- has not been verified yet.
+
+function OuterFunction()
+{
+    	//encapsulated data kept here
+        var data01="JWTO"
+	//end of encapsulated data
+
+	//example of a getter function
+	this.getData01 = function()
+	{
+	return data01;
+	}
+}
+
+//In console
+x = new OuterFunction()
+//x is now an object that has encapsulated data in data01.
+//you can use the gitData01 method to read the data.
+//there is no way to write to this data without a setter function.
+
+
+function OuterFunction()
+{
+	[data area]
+
+	this.innerFunction01 = function()
+	{code goes here}
+
+	this.innerfunction02 = function()
+	{code goes here}
+}
+
+(elsewhere...)
+var x = new OuterFunction()
+x has methods (innerFunctions above that can access the [data area].  Otherwise it is inaccessible.
+
 

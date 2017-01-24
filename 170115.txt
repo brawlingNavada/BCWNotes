@@ -1,0 +1,35 @@
+How to keep gh-pages up to date: http://lea.verou.me/2011/10/easily-keep-gh-pages-in-sync-with-master/
+
+git add . 
+git status // to see what changes are going to be commited 
+git commit -m 'Some descriptive commit message' 
+git push origin master
+
+git checkout gh-pages // go to the gh-pages branch
+git rebase master // bring gh-pages up to date with master
+git push origin gh-pages // commit the changes
+git checkout master // return to the master branch
+
+Task: Turn this into a bash script.
+Task: Read and take notes on this JavaScript Summary site :: https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
+Card: The document.write() function writes a string into our HTML document. This function can be used to write text, HTML, or both.
+
+Fact: Although you can load scripts in the head of an html page it is usually considered a bad practice because it causes a delay in page load times.
+Fact: External scripts cannot contain <script> tags.
+
+
+CQ: Set CSS to fit brand logo inside a bootstrap title bar (170115)
+---HTML--
+<a href="#" class="navbar-brand"><img src="logo.png"></a>
+
+---CSS---
+.navbar-brand 
+{   padding: 0px; } 
+.navbar-brand>img 
+{   height: 100%;   padding: 15px;   width: auto; }
+
+Useful pen showing examples of this : http://codepen.io/bootstrapped/pen/KwYGwq
+
+
+
