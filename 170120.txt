@@ -1,0 +1,39 @@
+
+
+ProTip: add .ToLowerCase() to terms that you are checking so that you dont have to worry about capitalization.
+	if (flavor.name.ToLowerCase == choice.ToLowerCase)
+		{blah blah blah}
+
+Synchronically : one line at a time.
+
+https://marmot.com/love-the-outside/from-alpine-to-high-desert-10-days-of-climbing-in-idah://marmot.com/love-the-outside/from-alpine-to-high-desert-10-days-of-climbing-in-idaho
+
+
+========
+Markdown
+========
+
+
+1. Click the Fork Button
+2. Shold fork to your repository
+3. Gives you a copy of the resository in its current state in your github account.
+4. Clone
+
+
+If you fork upstream changes go to your repo (not the origional repo)
+If you clone upsteam changes to to the origioal repo.
+
+ForEach is just another way to loop over an array.
+
+var cats = ["Tom","Garfield","Felix","Tard","Grumpy Camp"]
+
+cats.forEach((cat) => {console.log(cat)})
+cats.forEach(some function in here to do something with the emement).
+
+this is really best used if it is being applied to all the elements in the array.  Not best used for seach.
+
+
+
+
+
+

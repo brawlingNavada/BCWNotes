@@ -1,0 +1,69 @@
+
+
+Scope
+
+the id of an html tag become a GLOBAL variable.
+
+window is a gigatntic object.
+
+When you assign an id it becomes window.id
+
+If you create a global variable it is a assigned to window.id
+
+Do you know what encapsulation is?
+	Having isolate scopes.
+	Think of scope as a container that holds something.
+
+There is a big difference between undefined and not defined.
+	not defined is a show stopper (it will throw error and stop code).
+	
+A variable defined within a function only exists when then function is active in memory.
+
+Omitting the var keyword and invoking the function will put the variables into global memory -- and they will persist in memory even after the code has finished executing.
+
+When you define a function, none of the code within the function runs.
+It does not exist until invoked.
+
+=====
+Never create a variable without using var, or let or const keyword!
+=====
+
+function GameController()
+{
+
+}
+
+
+If somone is getting an object by refrence the can manupulate it and change data inconsisteny.
+make sure that you are returning primative values, NOT objects.
+
+
+
+function gameController(name){
+	var player = name
+
+	this.getPlayerName = function()
+	{
+		return player.name
+	}
+	}
+
+gc1 = newGameController(jake)
+
+var funciton.attack = function()
+{
+	player.health -= 10;
+}
+
+Closure is when an inner function has access to an outer variable even after the function that created it dies.
+
+sOlid : Open for extension, closed for modification.
+
+a _ underscore denotes a private variable.
+_player is a private variable.
+ 
+"service" aproximately equal to "store"
+
+ Key: Variable declared in a function are hidden form any code outside of its definition.
+
+
