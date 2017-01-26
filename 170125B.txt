@@ -1,0 +1,33 @@
+Notest taken on 170125
+======================
+
+Task: https://teamtreehouse.com/library/git-basics
+Task: https://teamtreehouse.com/library/jquery-basics
+
+CQ: In git what does untracked mean? (170125B)
+Cheet: It is a new file.
+
+Key: for in loop is specifically for object keys.
+
+codefoo 2520
+
+``Array Methods``
+OQ: What is the difference between For Each and Map.
+A map returns an array with the same length as the origional array.
+A filter returns a subset of the origional array
+A find returns the first that matches.
+
+color.replace(/ /g,'-')
+the / / <-- regular expression for space
+git diff HEAD will show you the differences since your last commit.
+
+
+
+
+
+
+
+
+
+
+
