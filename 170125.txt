@@ -88,6 +88,28 @@ Example:
 See codefoo 2446
 placehold.it/200x200 --> will return a placeholder of size 200x200.
 
+====CheetSheet====
+Load Order in HTML file.
+1. Services
+2. Controllers (this loads second because controllers require serivces to be loaded first).
+3. Run the app.
+
+Services/Model opens with a constructor function
+This function does not return anything.
+It holds model data.
+It holds methods to CRUD that data.
+The methods each begin with the syntax:
+	this.functionName = function([parameters])
+
+The Conroller file opens with a constructor function
+The first line of this construcor function calls creates an instance of the Service/Model object.
+This file functions to draw data to the screen.
+Does this file contain methods to pull data from screen. 
+
+The app.js file creates an instance of the Controller object.
+This controller object is manupulated to add stuff to the screen by invoking controller methods.
+==================
+
 
 
 
