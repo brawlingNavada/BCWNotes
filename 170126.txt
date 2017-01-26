@@ -1,0 +1,88 @@
+
+
+
+Useful Array Methods
+====================
+
+Join two or more arrays, and return a copy.
+Concat()	
+
+Copy array elements within the array, to and from specified positions
+copyWithin() --> the modified array.
+array.copyWithin(target,start,end)
+array.copyWithin(the index to copy TO, the index to copy from, the index to stop copy)
+
+
+
+
+Check if every method of an array passes a test.
+every()
+
+Create a new array with every element in an old array that pases a test
+filter()
+
+Retun the first element in an array that passes a test
+find()
+
+Return the first index of an element in an array that passes a test
+findIndex()
+
+Call a function for each array element
+ForEach()
+
+Seach an array for an element and return its position
+indexOf()
+
+Check whether an object in an array
+isArray()
+
+Join all elements of an array into a string
+Join()
+
+Seach an array for an element, starting at the end, and return its position.
+lastIndexOf()
+
+Create a new array from the result of calling a function on each array element
+map()
+
+Remove the last element of an array and return
+Pop()
+
+Add a new element to the end of an array and return length
+push()
+
+Reduce the values of an array to a single value (left to right)
+reduce()
+
+
+Reduce the values of an array to a single value (right to left)
+reduceRight()
+
+Reverses the order of the elements in an array
+reverse()
+
+Remove the first element from an array and return
+shift()
+
+Select part of an array and return the new array
+slice()
+
+Check if any elements pass a test
+some()
+
+Sort the elements of an array
+sort()
+
+Add or remove elements from an array
+splice()
+
+Convet an array to a string and return result
+toString()
+
+Add new elements to the beginning of the array and return the new lenght
+unshift()
+
+Returns the primitive value of an array
+valueOf()
+
+
