@@ -11,6 +11,7 @@ Copy array elements within the array, to and from specified positions
 copyWithin() --> the modified array.
 array.copyWithin(target,start,end)
 array.copyWithin(the index to copy TO, the index to copy from, the index to stop copy)
+The easiest way to think about this is the place the second two parameaters first, i.e. specify where you want to copy to land only then worry about where you are pulling the copy from.
 
 
 
@@ -84,5 +85,63 @@ unshift()
 
 Returns the primitive value of an array
 valueOf()
+
+
+======ClassNotes======
+
+ http://materializecss.com/  <-- Reivew thsi framework.
+
+
+Always put your inputs into a form!
+<form action=""></form>  <-- action is pretty much obsolete, delete it.
+<form onsubmit=""></form>  <-- this is more modern with the on submit.
+<form onsubmit="studentCtrl.addStudent"></form>  < -- works but we don't wnat it to.
+The default action on a form submission is to reload the browser.
+The Name attribute shows up in the URL.
+If stuff is in the URL the form is reloading the page.
+
+<form onsubmit="studentCtrl.addStudent(event)"></form>  < -- works but we don't wnat it to.
+events are objects.
+the browser just kinda gives you an event object.
+the defaultPrevented is important.
+Sometimes we need to prevent the default action from happening.
+event.preventDefault <-- this is what you run to prevent the default.
+It is very easy to forget to prevent the default action.
+<form onsubmit="studentCtrl.addStudent"></form>  < -- works but we don't wnat it to.
+Don't use ids in forms.  Use names instead.  The reason why is it saves trips to the DOM.
+The form collects the infomation in the fields.  When you submitt this form the data is sent to the DOM you dont have to go back and get it using ids.
+This is why we use the name property.  This gives you a handle to this information.
+The form gives you all that infomration at once without have to go hunt it out of the DOM.
+var form = event.target;  <--this is one way to get the form info.
+The naming conventaiton for HTML is kabob-case.
+this means you need to use bracket notation when accessing the form in javascript because JavaScript cant handel the hypten.
+for example the name of an input field could be "student-name" to deal with this on the javascript side you use form['student-nane'] on the javascript side.
+When using a form you should NOT be using document.get...
+
+The Timeline of How Forms Work
+==============================
+1. You creat a form element, not a input.
+2. get rid of a on click for the button.
+3. Because you want to _submit_ the form and not just run the function.
+4. remember the sent the type of the button to "submit"
+5. The validation happens as a contengty of the form submisssion,
+	The on submit will not trigger unless all are valid.
+6. If everthting is good with validtion call the function refrenced by onsubmit="thisIsTheFunctionToCall(event) <-- event is the object created by submission.
+7. This is your one and only chance to hijack the event. 
+7. We jump to the function what is refrenced by onsubmit.
+8. If we want to change the default the default eventbehavior this must be the first line of the funciton you are calling.
+9. as a naming convention e is event.
+10. With event.target - target of the event is what triggered the event. (i.e. the name of the form)
+11. form = event.target.
+12. form['name-Of-Field-Goes-Here'].value() will return the value that was in that field when the form was submitted.
+
+CodeFoo 2552
+
+ 
+
+
+
+
+
 
 
