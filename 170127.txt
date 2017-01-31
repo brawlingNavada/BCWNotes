@@ -1,0 +1,15 @@
+
+
+
+ make sure that your call fucnitons sound like verbs.
+
+ the only functions that belong on the controller .this statements <--- what the user can touch.
+
+ [] download som JSON prettifier.
+
+ The service handles the async process as well as the other stuf.
+ Pull in Jquery
+
+
+
+

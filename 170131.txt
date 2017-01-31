@@ -1,0 +1,53 @@
+
+
+https://www.youtube.com/watch?v=-o8hhJPK0m0&list=PLAwxTw4SYaPmRCRPu9EjK-fWSccPwTOnc
+
+vuejs <-- the framework under discussion.
+popularity on gethub
+trending repositiories on github
+
+vuejs
+reactjs
+angular.js
+emberjs
+
+The framework updates the dom
+The farmework keeps the view and the data in sync.
+
+1. Load your libraries.
+Use at least version 2.
+2. Load services.
+3.  
+
+fetch(url).then(res => res.json().then(cb))
+//fetch is a javascript function that exists on the window.
+//Is part of ES 6?
+
+Protip: use of docstrings for creating the url.
+
+//iffi <-- A way to prevent global varaiables.
+(function(){}())
+
+<form @submit.pervent="search"><form>  <-- vue form tags.
+<select v-model="catagory">
+<option value = "actor">Actor</option>
+<option value = "director">Director</option>
+<option value = "title">Title</option>
+
+<input type="text" v-model="query"/>
+<button type = "submit">FIND</button>
+
+{{query}} <--mustach templateing.
+
+<li class="movie" v-for="movie in movies">{{movie.show_title}}</li>
+//v-for is a lope over movies
+
+When working with atrtibutes use : and not {{}}
+ex. :img="movie_poster" <-- NOT img src="{{movies}}"
+
+<button @click="reset>Clear Everything</button>
+
+
+
+
+
