@@ -1,0 +1,108 @@
+
+
+Make sure you are putting all variables in the data object.
+v-for can return both the item and the index
+see : 
+
+<ul id="example-2">   
+<li v-for="(item, index) in items">     
+{{ parentMessage }} - {{ index }} - {{ item.message }}   
+</li> 
+</ul>
+
+
+Promises
+========
+
+1. Pending state (while we are waiting for the event to happen).
+2. Resolved State (the promiss has been fulfilled).
+3. Reject State
+
+	Pending
+	|
+	|
+	--------------------
+	/		\\\\\
+	resolved 	rejected
+
+
+new Promise (function(reolve function, reject function))
+
+return new Promise(resolve, reject)
+
+promise object has a .then method.
+
+The virture of the promise is that you can catch errors.
+
+When developing an app -- think about error handeling.
+
+fs.gitFlix(this.catoagys...j)  <-- returns an promise object.
+
+Chaninging against a promise object is not really chaning.  You basically passing attributes or behavoir to the promise object.
+
+{promiseObject}.then(what to do at success)
+{promiseObject).catch(what to do at failure)
+
+what you are doing is SHAPING the promise object so that it can behave approprately when the object is run at some inditterminate time in the future.
+
+
+yoe can only attach a single .then to a promise but if that .then returns a prmise you can attache a .then to that.
+
+
+review this : https://www.udacity.com/course/javascript-promises--ud898
+
+
+ 
+ The Promise object is used for asynchronous computations. 
+ instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+ A Promise is a proxy for a value not necessarily known when the promise is created.
+ A Promise represents a value which may be available now, or in the future, or never.
+ It allows you to associate handlers with an asynchronous action's eventual success value or failure.
+ A promise is a method that eventaually produces a value.
+
+ OQ: Is a promise best thougt of us as a method or an object?
+
+
+
+A Promise is in one of these states:  
+Pending: initial state, not fulfilled or rejected. (This is the state it is in when it is created.).
+	It will eventaully become one of the states below.
+	Moveing to one of these states is accomplshed by a revealing constructor.
+Fulfilled: meaning that the operation completed successfully. 
+Rejected: meaning that the operation failed.
+
+codefoo 2636
+
+Here's how you create a promise:
+var promise = new Promise(function(resolve, reject) {
+ // do a thing, possibly async, then
+ if (/* everything turned out fine */) {
+ resolve("Stuff worked!");
+ }
+  else {
+   reject(Error("It broke"));
+    }
+    });
+
+ The promise constructor takes one argument, a callback with two parameters, resolve and reject. 
+ Do something within the callback, perhaps async, then call resolve if everything worked, otherwise call reject.
+
+promise
+	.then(
+		function(result)
+			{console.log(result) // stuff worked}
+		,function(err)
+		});
+
+then() takes two arguments, a callback for the success case and another callback for the failure case.
+
+http://portal.boisecodeworks.com/#/codefoo/2644
+
+
+
+
+
+
+
+
+

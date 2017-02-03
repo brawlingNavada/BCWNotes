@@ -1,0 +1,22 @@
+
+
+then is just a method that is accessible on the promise object.
+It allows us to map a function to resolve a supplied function.
+the .then regesters the success and fail function imeedately.  they are not invoked imeeately.
+
+
+<div class = "col-sm4" :class="{'on': false}"</div>
+
+class = "{|class to add|: true or false}"
+
+[ [ {cell}, {cell}, {cell}] <--- col] <--row
+
+data:{}
+mounted: function() {run some funciton to start with}
+Task : read lifecycle hooks for vue.
+
+ 
+
+
+
+
