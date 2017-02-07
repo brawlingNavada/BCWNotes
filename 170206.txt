@@ -1,0 +1,31 @@
+
+
+
+ GET: Recieve only
+ POST: Send & Recieve
+ PUT: Send
+ DELETE: ? (Send)
+
+ npm init  <-- used to create package.json
+
+ npm run start
+
+ you get to run javascript on the server side.
+node is good at faciliting communication with the client.
+It is a great language to write APIs.
+
+Node is not a server.
+Express is a webserver.
+you need to add that to your node project.
+
+========
+Card: HTTP Methods and the CRUD Accroynm
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,13 @@ npn init
 npm i --save express
 	make the main server file (index.js is default)
 
+add the debug line and start line in the .json file.
+    These belong in the scripts object below the "test" item.
+    "debug": "node --debug index.js",     
+    "start": "node index.js"
+
+
+
 Inside the Main Server File
 ===========================
 var express = require('express')
@@ -22,6 +29,8 @@ console.log("server started.")
 server.get('/', function(req,res){
 
 res.send({"woot":"node is awsone."}
+res.send("string one" + variable + "string two")
+
 })
 
 
@@ -96,7 +105,16 @@ server.delete
 nodemon this file
 
 
+===============================================
+Routing refers to the defination of application endpoints and how they respond to client reqeusts.
 
+Route definition has the following structure
+app.method(path, handler)
+
+app : an instance of express
+method : [get|put|post|delete..]
+path : a server path
+handler : the function that is executed when the route is matched.
 
 
 

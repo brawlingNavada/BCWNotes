@@ -1,0 +1,137 @@
+
+
+1. Setting up a database
+========================
+
+make new directory called node-mongo
+npm init <-- you do this whenever you start a project this gives you a package.json
+npm init -f you can apply the default settings without having to hit return a bunch of times.
+download the express package
+download the body-parser package
+
+install mongoose
+	orm - object relationship mapper
+
+	"debug": "node --debug index.js"  <-- attaches the debuger
+	"start": "node index.js" <-- runs the sever
+
+create an index.js file (this should match main: in .json file)
+
+in index.js console log a message
+
+bug
+setting
+configure
+launch via npm (launch program is the default, we don't want that).
+
+in index.js
+-----------
+require express, podyParser, mongoose
+instantiate a server
+	
+port numbers may cnange if you are in produciton or developm mode.
+
+
+let PORT = process.env.PORT || 8080  <-- for use on the cloud this says use the enviromnet variable otherwise use 8080.
+const PORT = process.env.PORT || 8080
+
+server.listen(PORT, ()=> {console.log("the server is up and runniong on port: ", PORT}
+
+In the project directory, create a new folder called server-assets.
+Insedie server assents create a folder called models.
+create a test.js in server-assets.
+
+in index.js
+-----------
+let test = require('./server-assets/test') <-- you must start with a dot.
+this will grab what ever is in test.js and add it to index.js
+When you require something it will EXECUTE code!
+console.log(test) <-- should print hello test.
+
+in test.js
+----------
+console.log(wea are now in test.js)
+let x = 'Hello Test'
+module.exports = x;  (like a file is returning a value)
+	You can export only the stuff and the private stuff stays private.
+	This is a type of encapusulation.
+	module.exports is simular to .this.
+	it gives you like file scope.  When you do this you are creating file scope.
+	you can also export functions!
+module.exports <-- note the plural in exports. (can use this once per file).
+
+In the models file
+create car.js in model folder.
+
+in car.js
+---------
+
+let car = "vroom"
+module.exports = {car}  <-- wrap stuff as an object so you can can send muliple stuff.  "As soon as you send one thing you will want to send more."
+
+in index.js
+-----------
+
+let car = require('./server-assets/model/car')
+When you require code it will run it imedately.
+
+You can chain your dependancies (using require) but you cannot loop them.
+"Application Archetcutre" -- folder structure becomes 'stupid important'
+
+[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+Objects and how they actually work
+==================================
+think data models :
+
+let carSchema = {
+
+
+
+
+	year: { type: number, required: true },
+	milage: { type: number, required: true, deafult : 0 },
+	condition: { type: string},
+	...
+	makeId: { type:objectId, ref: 'Make', requried: true }  <-- this you want to be its own model.
+
+
+
+
+
+}
+
+
+Nothing goes into the datababse that does not have a schemea.
+
+In make.js
+----------
+//name, country, website, logo,  
+let makeSchema = { 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
