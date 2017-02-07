@@ -1,0 +1,105 @@
+
+Setting up a Express 
+
+make a package.json
+npn init
+	main tells you where the main entry point into your server will be.
+npm i --save express
+	make the main server file (index.js is default)
+
+Inside the Main Server File
+===========================
+var express = require('express')
+var server = express();
+bodyParser = require('body-parser')
+server.use(bodyParser.json())
+server.use(bodyParser.urlencoded({ extended: true }))
+
+
+server.listen(8080)
+console.log("server started.")
+
+server.get('/', function(req,res){
+
+res.send({"woot":"node is awsone."}
+})
+
+
+
+CRUD
+====
+Create : POST
+Read : GET
+Update : PUT
+Delete : DELETE
+
+Sample POST Code
+================
+server.post
+('/user', function(req, res)
+{
+console.log("reqeust:", req.body)     
+console.log(typeof req.body)     
+db.users.push(req.body)     
+res.send(db.users) 
+})
+
+
+Sample GET Code
+===============
+server.get
+('/', function(req, res)
+	{
+	res.send({woot: 'node is awesome'}) 
+	}
+)
+
+
+Sample PUT Code
+===============
+
+server.put 
+('/users/:id', function (req, res)
+	{
+	let userId = req.params.id;     
+	let user = _findUserById(userId)     
+		if (user)         
+			{         
+			user.name = req.body.name
+			return res.send(user)        
+			}     
+	return res.send(new Error('BAD ID BUDDY'))     
+	} 
+)
+
+SAMPLE DELETE CODE
+==================
+server.delete
+('/users/:id', function (req, res) 
+	{   
+	let userId = req.params.id;   
+	for(var i = 0; i < db.users.length; i++)
+		{
+		let user = db.users[i]     
+		if (user.id == userId) 
+			{       
+			db.users.splice(i, 1)       
+			return res.send({message: 'Successfully removed user'})     
+			}   
+		}   
+	return res.send(new Error('BAD ID BUDDY')) 
+	}
+)
+
+
+
+nodemon this file
+
+
+
+
+
+
+
+
+

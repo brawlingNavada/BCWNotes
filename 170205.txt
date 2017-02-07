@@ -1,0 +1,10 @@
+<div class="showTodos" @click="tm.showToDos()"> 
+<div v-if="show_Todos" class="todoBox"> 
+<li v-for="(item,index) in todo" @click="tm.checkItem(item)"> 
+<form @submit.prevent="formSubmitted"> 
+<input type="text" v-model="inputToDo" style="color:black;">
+<span v-on:click="tm.hideTodos()">Hide ToDos</span>
+<button type="button" class="deleteChecks" v-on:click="tm.clearCompleated()" style="color: black; background-color: orangered; position: absolute; top: 15px; right: 15px;">Clear Completed</button>
+<div class="quoteBox" v-on:mouseover="showText = !showText">
+<h1 @click="cm.showMilitary()">{{time}}</h1> 
+<h2 v-if="showText">{{quoteText}}</h2> <h2 v-else>{{quoteAuthor}}</h2>
