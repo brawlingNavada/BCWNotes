@@ -1,0 +1,256 @@
+
+
+Agile : react to changes in requirements.
+
+Product owner : represents customer -- has knowlage of busiess rule
+You develope user storyies and the dev team comes up with a list of features over a sprint.
+At the end of each sprint you release something funcitonal.
+
+[] the ten key principes of agile
+
+1. Active user involvment is impartiatve.
+	The user must provide feedback.
+2. The team must be powered to make decisions.
+3. Requirements evolve but the time peroid is fixed.
+4. Caputre requirements at a high level (light weight and visual).
+5. Develope small, imcremental releases and iterate.
+6. Focus on frequently delivery of products.
+7. Complete before moving on.
+8. Apply the 80/20 rule.
+9. Testing is integreted throughout the project lifecycle.
+10. Be colaberative and cooperateive.
+
+Scrum Meeting
+=============
+What did you do yesterday?
+What are you going to do today?
+Is anything blocking you?
+
+[] Trello - scrumboard
+
+Backlog		Ready		In Work		Ready To Test		Done
+=======		=====		=======		=============		====
+
+As a user I want to see the current weather.
+As a user I want to add my city to the the weather - to show the local weather.
+As a user I want to add my city to the the weather - to show the local weather.
+I want a todo list to keep track of my todos.
+
+Scrm poke is a funciton complexity - not time.
+	What am I going to have to do to make this work?
+	 
+
+Contious Integration: 
+Build Server
+
+unit test modules chai  / gulp
+
+build your units test first?
+
+gulp run-tests
+
+the gulpfile.js is at the root directory.
+
+This is the contents of the gulpfile.js
+gulp.task('run-tests', function(){return gulp.src('test/**/*.js', { read: false }).pipe(mocha({ timeout: 30000, reporter: 'spec' })); });
+
+
+
+/ planets
+	galayid id
+	starId
+	moons []
+
+	
+===========================================================
+
+make a directory called thePlanets
+touch index.js
+npm init
+npm i --save express body-parser uuid 
+
+go into vsCode
+
+in index.js
+-----------
+
+let express = require('express')
+let bodyParser = require('body-parser')
+let uuid require('uuid')
+const PORT = process.env.PORT || 8080
+
+let server = express()
+
+
+let db = {
+galaxies : []
+stars: []
+plaents: []
+moons: []
+{
+
+
+
+server.post('/galaxies',function(req,res){
+let galaxy = req.body
+galaxy.id = uuid.v1()
+
+if (galaxy.name || galaxy.description) 
+	{
+	return res.send('you must provide valid data').  //<-- you can be more descriptive here.
+	}
+
+db.galaxies.push(galaxy)
+return res.send({'Successfully created a new galexy' data: galaxy})
+
+
+})
+
+
+
+///At this point open up post man
+//post to galaxies.
+//At this point we don't have a get.
+
+
+server.get('/galaxies',function(req,res){
+res.send({ data:db.galaxies})
+
+})
+
+
+// need to write put and deletes for these.
+
+
+
+server.post('/galaxies/:id',function(req,res){
+//this is a completedly different endpont that the previous.
+
+	let galaxyId = req.params.id
+	
+	db.galaxies.find(galaxy => {return galaxy.id == galaxyId})  <-- review the find array method
+	//review jake's code pattern for this point.
+
+}
+
+
+//create a resouce
+//
+
+// adding a star  <--
+
+server.post(/'stars', (res,req) => {
+
+	//check for a galeaxy ide
+	let star = req.body
+	if (!star.galaxyId) {return send.({error youmost provide a galixy idea whty coreating stars}}
+
+	//it they providede a galexy id you must provide a galey id
+	let galaxy = db.galaxies.find(galaxy => {return.id == star.galaxyId})
+
+	if(galaxy)
+		//give the star a unique id
+		//push the star to the db.
+
+		//extended challenge also add the star ide add to 
+		//return the successfully created object.
+		//otherwise return an error.
+
+})
+
+//A star cannot be created without a galaxy id.
+//A planet cannot be created without a star id.
+//When you create a planet accept the star id and set the galaxy id to the approprate galaxy for that star.
+
+//do this for planet galexies, stars moons
+//dont do speices.
+//if you have time try to move into idnvideula files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+server.use(bodyParser.json())
+server.use(bodyParser.urlencoed{extended.true})
+
+server.listen(PORT, function(){console.log("server is working"})
+
+need to add stuff to package.json
+	add start and node.
+	bug, add configuration 
+
+
+//////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
