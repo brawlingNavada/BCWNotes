@@ -167,44 +167,19 @@ server.post(/'stars', (res,req) => {
 //if you have time try to move into idnvideula files.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 server.use(bodyParser.json())
 server.use(bodyParser.urlencoed{extended.true})
 
 server.listen(PORT, function(){console.log("server is working"})
 
 need to add stuff to package.json
+
+  "scripts": {     
+  "test": "echo \"Error: no test specified\" && exit 1",     
+  "debug": "node --debug index.js",				<--- need to add this line     
+  "start": "node index.js"},					<--- need to add this line
+
+
 	add start and node.
 	bug, add configuration 
 
