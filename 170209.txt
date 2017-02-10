@@ -1,0 +1,256 @@
+
+k: bitbucket
+Code challenge: 
+http://wiki.c2.com/?TelegramProblem
+http://www.openculture.com/2017/02/the-map-of-mathematics.html
+
+
+
+
+Challenge
+find second to highest element of an array. [1,2,3,3] <-- should return 2.
+
+Task: finish building routes
+
+
+connection string is a url with a username and password.
+
+client --->  server ---> cloud based database.
+
+connecting to an external database.
+we will use mongodb for now.
+
+mlab.com 
+
+login
+create new
+
+display name: space
+choose us west
+ip address, leave alone
+create new
+"should say mongo DB Deployment"
+
+single node
+azure
+do in sandbox mode
+use verson 3.2x
+give name space.
+
+should see $0.00 per month
+
+click create new database
+
+click on database name
+note the connection string
+
+click on create user
+	rocketman
+	123password
+
+
+
+Now we go back into node to write code to cmmunicate with thsi guy.
+
+to connect to database we only need moongoose
+
+install mongoose 
+npm i --save mongoose
+
+in index.js
+----------
+
+let mongonoose = require('mongoose')
+const connectionString = 'the connection string edited for username and password'
+let connection = moongoose.connection
+
+mongoose.connect(connectionString, {options -- see jake's code.})
+
+
+connection.on('error', ()=> {
+console.log('there was a connectionproblem.', err)
+}
+
+connection.once('open', ()=> {
+
+you can put the server.listen here.
+there is no point in connection to the server.
+if there is ...
+
+console.log('we are now connect to space');
+
+
+
+})
+
+
+~~ at this point we are ready to test ~~
+~~ can show a connection to the database ~~
+
+bug 
+gear
+[] <-- erase congiguration array.
+add configuration
+launch via npm
+
+
+If you dont use moongose, it gets a lot harder.
+
+The galaxy schema
+=================
+
+let GalaxySchema = new Schema {
+	name: {type:string, required: true}
+	description: {type: string}
+}
+
+We tell mongoose about the schema
+Let mongoose wory about create, update adn delete thoguh schema.
+
+
+let Schema = mongoose.Schema
+
+
+let Galaxies = mongoose.model('galaxy', galaxySchema)  <-- galaxy singulare is correct.  (?)
+
+Galaxies.create({
+
+name: 'AM2R',
+description: 'A cool place for bounty hunters to chill.'
+
+})
+
+At this point we restart the server.
+Then we go to to the mlab website to see if the data was created.
+
+Galaxies.create returns a promise.
+
+so...
+
+Galaxies.create(galaxy).then(ret_galaxy).catach()  <--- the ret_galaxy is returned from mongoDB it is the object stored in the db.  (in this case they will ahve added an id.)
+
+for getting all the galiexe--
+
+Galaxies.find() <-- will find all without filtering.
+Galaxies.find() <-- this is asyc process.
+
+Galaxies.find().then(galaxies => {
+code goes here.
+}
+
+a model is a type of object that you want to work with.
+you cannot serialize a function and store it in a database.
+
+
+This is the part where we break apart index.js
+==============================================
+
+Folder strucutre for node projecs
+
+Keep Crap out of root
+1.) Sock drawer archetcture : all red socks go in sock .
+2.) Compoent archecture
+
+new folder called server assets
+	models folder <-- all the models go here.
+		galaxy-model.js <-- Take the stuff associated with galaxy andput in the model folder.
+			add in the requiremtns 
+			let mongoose = requre('mongoose')
+
+			need to be able to eport this back to the index.js
+			you export as the singlar
+
+			mondule.exports = Galaxies
+
+			becasue it is a model we call it a galaxy mode (singouar).
+
+	routes folder <-- all the routes go here
+		galaxy-routes.js <-- take the routeing stuf out of the index.js file
+			at this point we don't have access to server and or galaxies.
+
+			let express = require('express')
+			let router = express.Router()  <-- you are createing subroutes.
+			let galaxies = require(../models/galaxy-model)  <-- make sure your model does not require your routes!
+
+			in the rest of the file change 'server' to router.
+			module.exports = router
+
+
+Back to index.js
+=================
+
+let galaxyRoutes require('./server-assets/galaxy-routes')
+
+
+server.use(galaxyRoutes) <-- what exactly is a galaxyRoute?
+
+
+
+Relationships 
+=============
+
+let ObjectId = Schema.Types.ObjectId //this builds the refrence for the schema.
+The relationships go inside the schema.
+stars [{type: ObjectId, ref:'Star'}]
+
+ref: <-- this limits the scope of 
+
+For every model you build you need routes.
+go into the routes folder
+make a new file. ex: star-routes.js
+
+let router = require('express').Router()
+router is a method off the express object.
+
+if we want to get all stars:
+Stars.find() <-- this is the find method on the Mongose object model NOT the array find.
+
+ 
+Stars.findById(req.parmas.id) <-- this methoid comes to us from mongoose.
+
+stars.findById(req.parmas.id).then(function that resturns something)
+.catch(error condition fucntions.)
+
+/galaxies/:id/stars/:starId?  <-- the question makes the last paramater optional.  You can then use an if statmemtnt to parse the query.
+
+
+
+
+
+
+
+
+we will need the model
+let Stars = require('../models/star-model')  <-- this grabs model for you to use in this file.
+
+
+
+whenever you create a route file, you will have to export the route.
+module.exports = router.
+
+
+Git Ignore
+
+====
+.gitignore <-- at project root
+	in there put the name of the folder to ignore
+	in this example node_modules  <---
+
+	you can google gitignore node to find examples of master git 
+	github is a great reasource for this
+
+	server.listen(PORT, function(){console.log("the server is runing confortabally.")})
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
