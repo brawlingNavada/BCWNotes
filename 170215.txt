@@ -1,0 +1,11 @@
+
+
+In SPA you do all the communications through ajax.
+
+If evertything is on a single page, how do you segragate what belonogs on the screen.
+
+The URL is what trigers the page change.
+
+Common Interview Questions ========================== - What is JavaScript? - Name some JavaScript features. - What are the advantages of using JavaScript? - What are disadvantages of using JavaScript? - Is JavaScript a case-sensitive language? - How can you create an Object in JavaScript? - What is an object? - How can you read properties of an Object in JavaScript? - How can you create an Array in JavaScript? - How do you to read elements of an array in JavaScript? - What is a named function in JavaScript? - How many ways can you define a function in JavaScript - How do you define an anonymous function? - Can you pass an anonymous function as an argument to another function? - How can you get the type of arguments passed to a function? - How can you get the total number of arguments passed to a function? - What is the purpose of 'this' operator in JavaScript? - What are the valid scopes of a variable in JavaScript? - What is a callback? - What is closure? Give an example of closure? - What are the variable naming conventions in JavaScript? - How to reverse a string? - How to reverse a sentence? - What is an Extension Method? - Calculate a remainder given numerator and denominator (or return the result with remainder 3r1) - Return distinct values from a list containing duplicates (1 3 3 5 7 8 2 1 9 8) new Set ([1, 3, 3, 5, 7, ...])
+
+

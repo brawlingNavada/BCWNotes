@@ -1,0 +1,72 @@
+
+
+Card: main.js is the entry point for the application.
+sandbox.js
+in main.js is the top level to import components.
+	import sandbox from './sandbox'
+
+
+
+--------------------------
+let sandbox = {
+	sand = 1000
+
+}
+export default sandbox
+-------------------------
+
+Card: the purpose of a service is to hold encapsulated data.
+
+
+-------------------------
+let user = {
+name : 'jake'
+email: 'j@j.com'
+password: '123password'
+}
+
+
+let users = {"j@J.com"}
+
+export default user
+-------------------------
+
+Review : Javascript dictionary
+
+
+-------------------------
+let users = { 
+{
+name : 'jake'
+email: 'j@j.com'
+password: '123password'
+},
+{
+name : 'jake'
+email: 'j@j.com'
+password: '123password'
+}
+}
+
+
+user.login = function(username,password)
+{
+	if (users[username][password] == password;
+	return {users[username].name, users[username].password }
+}
+
+
+
+
+
+
+let users = {"j@J.com"}
+
+export default user
+-------------------------
+
+
+
+
+
+

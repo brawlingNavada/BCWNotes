@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 k: bitbucket
 Code challenge: 
 http://wiki.c2.com/?TelegramProblem
@@ -251,6 +252,13 @@ Git Ignore
 
 
 
+=======
+
+
+https://www.bloomberg.com/features/2017-new-unemployment/
+
+https://martinfowler.com/articles/201701-event-driven.html
+>>>>>>> 8e13c2709d478444e7a973c8f33a7bee57d59508
 
 
 

@@ -1,0 +1,153 @@
+xxxxxxxx
+Front end frameworks have a router.
+
+Routing on front end is different than the backend.
+	Front end routing preserves state.
+
+	OQ: build system on front end?
+
+	Need to review vue components.  Rewrite inspire.
+
+	Review and be able to talk intellegetnly about -- Model view controller
+
+CLI
+used to generated tools.
+provides a platform, scaffold to all you to build your app faster.
+
+we are going to use webpack
+You could spend weeks trying to learn how webpack works.
+(not worth your time - frameworks already do is).
+
+In the future you will want to to do this. 
+
+
+OQ: What exactly is webpack.
+
+control shift b
+click on npm drop down
+OQ: what does a taks runner tod?
+
+Build task is not set up bcy defaultl
+
+
+        {             "taskName": "test",             "args": ["run", "test"]         },            {             "taskName": "build",             "args": ["run", "dev"]         }     ] }
+																		==========================  <-- this is the parts that is added.
+
+	then control shit + b
+
+src is where we will write our code.
+
+main.js is the file that starts the vue application..
+
+import is simiar to require on the node side of things.
+On the frontend we use import
+
+Vue wants you to build componetents.
+
+inspect app.vue (this is not javascript)
+in this file you write your code between the scipt tags.
+
+inside components there is a hello vue.
+
+templates are generated inside of a template tage.
+Review slap game functionality -- obselete but a useful model.
+
+Review VUE docs.  
+	Docs for this template <--review this
+	Core does <-- review this.
+
+control shift=b will stop and restart the server.
+
+in class we downloaded pug and stylus
+
+you are working in the source > components > hello.vue file.
+
+to add a new componet
+add a blank filue inder come.
+
+there is a way to import components from other files into the 'master componet file.'
+
+vue props
+
+:propery = "object you want to pass"
+object you want to pass is what you are v foring.
+you need to add a props in the script tag to show the child object were are getting data from parent scope.
+
+
+for example: v-for r 
+
+:room="r"
+
+props: is recieving a propery from a parent scope.
+props: ~stuff I want to get from the parent scope~
+
+the v-for isn in the parent 
+in the v-for  
+
+coding game
+
+codegame.com
+	start with onboarding
+
+Orgnization of external resources
+==================================
+
+at the botte m of he file when you want to expeort a fie.
+
+export ...
+
+and there should be an equlivalant import in the file to which you are dragging stuff to.
+
+1.) code data in single file
+2.) split object into mulitple files.
+
+:x <-- when you are binding in a parent this is what you need to call the item in the child item.
+
+If you want to use a compent you need to regrester
+	the view file will have a templant, script and style
+
+	<template>
+	This is a test.
+	</template>
+
+	at the script 
+	<script>
+	export default { props: ['x']}
+
+	components : {}
+
+
+	</script>
+
+	this. <-- only refers to the vue componet.
+
+	any information you want on down the line, you have to pass it through on a prop.
+	this happens a lot in v-fors.
+
+	pojo : plain old javascript object
+
+
+Drag and Drop
+=============
+
+mdn drag and drop
+
+A subset of HTML elements can be set a dragable.
+
+you define the room as droppable.
+
+ https://unpkg.com/vue@2.1.10/dist/vue.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
