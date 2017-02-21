@@ -1,5 +1,114 @@
 
 
 Task: review use of filter in codefoo 2907 deduplicate arrays.
+Task: create a trello account
+Taks: review routes as trello uses them
+
+
+
+Login in page has a series of boards.
+You log in you see your dashboard
++ create new boards
++ see active boards - click on them
++ should be able ot invite someone else to board.
++ the UI is LAST
++ Each board is just a list
++ can click on a task 
++ comments associated with tasks
++ activity is tracked - logging.
++ can create a brand new list - can drag tasks to lists.
+ 
+========================================================
+Fully functional appliaiton using just postman
+
+1) Build your relationships
+
+
+
+make directory vue-kanban <-- project directory
+mkdir server
+mkdir www  <-- conventional name for web application
+
+don't force the bakend to be good at somethings its not.
+you server should not care what the front in framework is.
+the API is the glue between the two
+node is perfect at being an api
+
+you will be opeing two instances of vscode (one for each)
+
+cd www
+vue init webpack
+y
+project name is www-kanban
+description: this is our front end for the kanban
+install the vue router
+n to lint
+n to unit tests
+
+Front end piece is done for the next three days!
+
+go back to the project folder
+
+ cd server
+npm init
+server-kanban for name
+description: this is the server for our kanban project
+entry is index.js
+...
+this forms the backend of the server
+
+code . <-- open up code
+Make sure you are in the server diretory!!!  NOT vue-kanban
+
+create an index.js file
+click on cog
+add configuration -- runwith npm (you can deelete all the old configuarations when you do this).
+
+in backage.jason
+test key becomes debug
+the value is node --debug index.js
+start: node index.js
+
+==download dependencies==
+npm i --save express express-session mongoose body-parser  (the express-session is new, it provides authentication)
+connect-mongo
+connect-mongodb-session
+bcyrpt.js
+cors
+
+==Folder Structure== (of server)
+[authentication]
+[config]
+	constants.js
+	dev-server.js
+	env.js <-- enviroments
+	handlers.js
+	routes.js
+[models]
+index.js
+package.json
+
+**we are not using server side routeing
+
+== how to make env.js==
+touch env.js
+we are enforcing the node environment variables in one file.
+you the export the environment
+
+== how to make constatns ==
+similar to environment
+this is where you store you constants
+magic strings are BAD!
+you avoid magic strings by setting ups a constants file
+you import the constants file whenever you would otherwise use a magic stirng.
+
+==dev-server==
+
+
+
+setting
+colorbarator
+teams
+add by username
 
 
