@@ -1,0 +1,33 @@
+
+
+
+
+
+Review code foo 2946
+1.) consider using  a dictonary
+2.) consider using a shift function, working backworks off the end of the sorted array using a 
+while (number.length)  
+	when number.length -- gets to zero the loop stops.
+
+also review this: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
+
+=====
+socket chat
+(talking about sockets Tom)
+
+npm init  <-- this tracks your package dependencies.
+npm install --save express body-parser socket.io 
+
+socket.io is a library that allows you to build in real time application 
+https://github.com/socketio/socket.io
+(At the moment there server is down)
+
+WEBRTC - is direct client to client (middle server).
+peerjs.com - similar to WEBRTC
+
+ 
+
+
+
+
+

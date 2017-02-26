@@ -1,0 +1,25 @@
+
+
+Codefoo 2942
+Do codechallenges in mypath
+
+ 
+ schema.methoids.getLists = funciton(next{} 
+
+ Relationsips are created by Ids
+
+
+ Parent --- >  Child
+
+ The children know they belong to the parrent but not vice veresa
+ The board objct does NOT have list ids.
+
+A child has filed called board Id.
+
+Childirene have revernce ot parent.
+A parent does not have refrence to a child.
+
+
+
+
+

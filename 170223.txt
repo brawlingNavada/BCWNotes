@@ -1,0 +1,63 @@
+
+
+
+
+Codefoo 2920
+
+GEBZFNBT
+Lars Solution 2961
+Kenny 2957
+Extended challeng is to find the inverse
+=========================================
+
+Up to now we have individual components returning state.
+(local state)  i.e. on the component itself.
+
+All data into the application we are going to pull from a single source of truth.
+
+The store is what is responsible for talking to the api.
+
+Never, never, never have the coponet talk to the api.
+
+you componets have a computed property against the store that it was allows you stay current withthe store.
+
+Axios does ajax calls.  It is the new hip way to do these things.
+
+Axios allows us to use a base URL
+
+==========================================
+
+Task: Review callback & promises.
+
+Actions on Google
+Aza Tulepebergenov 
+Aza --
+
+Google Development Group
+Google Assistant - voice command.  "OK google <-- google now soon to be google assistant"
+
+Actions on google are the interface to google assistant.
+Actions is the API
+
+Fulfillment will invoce the node functions.
+
+API.AI + ApiAiAssistant <-- api assistant is a js library.
+Conversation API + Action SDK
+
+API.AI abstracts the NLP from you.
+ 
+ngrok <-- creates a local weberver on the local host.
+ 
+===============
+
+ develoers.com.gogole actions <-- give this to aaron.
+ google has a github account with sample projeccts 
+
+ ==========
+
+  
+
+
+
+
+
